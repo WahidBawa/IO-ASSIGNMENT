@@ -1,9 +1,7 @@
 #fileAssignment1.py
 from pprint import *
-low = int(input("ENTER THE POINTS FROM: "))
-high = int(input("ENTER THE POINTS TO: "))
-finalList = []
 people = open("ATP.txt", "r").read().strip().split("\n")
+low, high = int(input("ENTER THE POINTS FROM: ")), int(input("ENTER THE POINTS TO: "))
 fname = open(str(low) + "to" + str(high) + ".txt", "w")
 for i in people:
 	person = i.split(',')
