@@ -1,0 +1,27 @@
+Reading and writing to files is very similar to printing to the screen and reading 
+from the keyboard.  There are a few reasons why using files is essential.
+
+1. Can save permanent results from your program.  Values in variables and pictures on the screen 
+only last as long as the program runs. Writing files to the hard drive allows you to save the 
+results of your program permanently.
+
+2. Easier to test your program from file to make sure it is correct (rather than typing in 
+50-100 pieces of data each time.)
+
+3. Outputting to a file makes it easy to use the results in another application. We can open 
+the output of our Python program in Excel so we can add a nice graph. We can write HTML code 
+from our Python program and open it in a browser. We can even write output from one Python program 
+that acts as input to another python program.
+
+4. Reading data files allows us to easily add vast amounts of information to our programs. 
+You want all of the movies that ever won an Oscar, all of the Governor Generals of Canada, 
+or The Complete Works of William Shakespeare, all are very easy to find on the Internet.  
+Once you have the raw data in a file it is fairly easy to extract the information you need for 
+your program.
+
+5. Separation of Data from Algorithm. If you type in your data at the beginning of your program, 
+then your program will only work for that data. If you read in your data from a file then you can 
+easily change the file and now your program will work for the new data.
+Suppose I have a program that reads in every student's name and course requests for the next school 
+year. The data will change every year, but the program shouldn't. This also means that I can give my 
+program to others and they can use it just by changing the data file.
