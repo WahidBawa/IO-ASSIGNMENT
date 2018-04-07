@@ -8,7 +8,7 @@ for i in words:
 	for n in word:
 		l.append(n)
 for i in l:
-	mx = [] ; mx = list(i)
+	mx = list(i)
 	if len(mx) > 3:
 		l1, l2 = mx[0], mx[-1] ; del mx[0] ; del mx[-1]
 		shuffle(mx)

@@ -1,13 +1,17 @@
 # fileAssignment2.py
 from pprint import *
-seuss = open("seuss.txt", "r").read().strip().split('\n')
+from re import *
+seuss = open("hamlet.txt", "r").read().strip().split('\n')
+dictionary = open("Dictionary.txt", "w")
 words = []
 for i in seuss:
-	sentence = i.split(' ')
+	sentence = split(' |, |-',i)
 	for n in sentence:
-		n = n.lower().strip('.').strip('?').strip('!').strip(',')#.strip('[').strip(']').strip('(').strip(')').strip(';')
+		n = n.lower().strip('.').strip('?').strip('!').strip(',').strip('[').strip(']').strip('(').strip(')').strip(';')
 		if n != '':
 			if n not in words:
 				words.append(n)
-pprint(words)
+s = "\n".join(words)
+dictionary.write(s)				
+# pprint(words)
 pprint(len(words))
