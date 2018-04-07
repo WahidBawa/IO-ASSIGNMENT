@@ -1,7 +1,7 @@
 # fileAssignment2.py
 from pprint import *
 from re import *
-seuss = open("hamlet.txt", "r").read().strip().split('\n')
+seuss = open("seuss.txt", "r").read().strip().split('\n')
 dictionary = open("Dictionary.txt", "w")
 words = []
 for i in seuss:
