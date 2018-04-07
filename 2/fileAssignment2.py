@@ -1,6 +1,6 @@
 # fileAssignment2.py
 from pprint import *
-seuss = open("hamlet.txt", "r").read().strip().split('\n')
+seuss = open("seuss.txt", "r").read().strip().split('\n')
 words = []
 for i in seuss:
 	sentence = i.split(' ')
