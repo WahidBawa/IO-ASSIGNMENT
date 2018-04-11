@@ -4,7 +4,7 @@ words = open("testing.txt", "r").read().strip().split('\n') # opens the file tha
 fname = open("MixedFile.txt", "w") # This opens / creates a file that will store the text after it is mixed up
 l = [] ; mixedList = [] # creates initial list and the list that will store the mixed sentence
 for i in words:# starts the loop that will add the words to a list so that they are ready to be mixed up
-	w2ord = i.split(" ") # sepperates the words wherever there is a space
+	word = i.split(" ") # sepperates the words wherever there is a space
 	for n in word: # will append the individual words to the initial list
 		l.append(n)
 for i in l:# this is the loop that will run the process of mixing up the words
