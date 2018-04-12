@@ -1,6 +1,6 @@
 # fileAssignment2.py
 from pprint import * ; from re import * # imports the pretty print and allows me to split multiple times by importing re
-seuss = open("hamlet.txt", "r").read().strip().split('\n') # opens the file that I will read the information / story from
+seuss = open("seuss.txt", "r").read().strip().split('\n') # opens the file that I will read the information / story from
 dictionary = open("Dictionary.txt", "w") # Opens / creates a file that will store the unique words used in the story
 w = set() # stores the unique words in the story
 p = list("!#$%&()*+,-./:;<=>?@[\]^_`{|}~") # stores the punctuation
